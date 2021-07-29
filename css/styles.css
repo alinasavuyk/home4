@@ -258,7 +258,7 @@ margin-bottom: 0;}
           fill: #afb1b8;
           }
          .icon-insta {color: #AFB1B8;
-          background-color: var(--white-color)}
+          fill: #afb1b8;}
          .icon-insta:hover {color: var(--white-color);}
          .network:hover {background-color: var(--accent-color);}
   /*Футер*/
