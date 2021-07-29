@@ -185,9 +185,7 @@ margin-bottom: 0;}
     background-color: #F5F4FA;
     margin-bottom: 30px;
 }
-.icon {
-  fill: currentColor;
-}
+
   /*Чем мы занимаемся*/
   
   .section-title {
@@ -251,16 +249,17 @@ margin-bottom: 0;}
     justify-content: space-between;
   }
   .network {
-    padding: 0;
-    border: 0;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white-color);;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+   background-color: blueviolet;
   }
+  .icon-insta {color: #AFB1B8;
+  background-color: var(--white-color)}
   .network:hover {background-color: var(--accent-color);}
   /*Футер*/
   footer {
