@@ -248,19 +248,19 @@ margin-bottom: 0;}
     padding: 16px 32px 30px 32px;
     justify-content: space-between;
   }
-  .network {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: #afb1b8;
-  }
-  .icon-insta {color: #AFB1B8;
-  background-color: var(--white-color)}
-.icon-insta:hover {color: var(--white-color);}
-  .network:hover {background-color: var(--accent-color);}
+        .network {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          fill: #afb1b8;
+          }
+         .icon-insta {color: #AFB1B8;
+          background-color: var(--white-color)}
+         .icon-insta:hover {color: var(--white-color);}
+         .network:hover {background-color: var(--accent-color);}
   /*Футер*/
   footer {
     background-color: #2f303a;
