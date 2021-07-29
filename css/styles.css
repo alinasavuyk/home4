@@ -261,7 +261,28 @@ margin-bottom: 0;}
           fill: #afb1b8;}
          .icon-network:hover {fill: var(--white-color);}
          .network:hover {background-color: var(--accent-color);}
-  /*Футер*/
+        /*Постоянные клиенты*/
+        
+         .clients {
+          padding-top: 94px;
+          padding-bottom: 94px;
+        }
+        .clients h2 {
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 42px;
+          text-align: center;
+          letter-spacing: 0.03em;
+          color: var(--title-text-color);}
+        .clients-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 170px;
+          height: 92px;
+          fill: #afb1b8;
+          }
+         /*Футер*/
   footer {
     background-color: #2f303a;
   }
