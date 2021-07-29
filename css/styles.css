@@ -176,23 +176,18 @@ margin-bottom: 0;}
   .values-item {
     width: 270px;
   }
-  /*.values-item::before {
-    display: block;
-    content: "";
+  .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
     height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;;
- 
-  }*/
-  /* <use href="./images/sprite.svg#icon-antenna"></use> */
-  /*.icon-antenna:before {background-image: url(../images/antenna\ 1.svg);}
-  .icon-clock:before {background-image: url(../images/clock\ 1.svg);}
-  .icon-diagram:before {background-image: url(../images/diagram\ 1.svg);}
-  .icon-astronaut:before {background-image: url(../images/astronaut\ 1.svg);}
-*/
-
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}
+.icon {
+  fill: currentColor;
+}
   /*Чем мы занимаемся*/
   
   .section-title {
