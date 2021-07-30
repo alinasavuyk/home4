@@ -74,7 +74,10 @@ margin-bottom: 0;}
     color: var(--accent-color);}
   .link.current {
     color: var(--accent-color);}
-  
+    .envelope {
+      fill: #757575;
+    }
+    .envelope:hover {fill: var(--accent-color);}
    /*Логотип*/
    .logo {
     margin-right: 93px;
@@ -257,16 +260,11 @@ margin-bottom: 0;}
           border-radius: 50%;
           fill: #afb1b8;
           }
-         .icon-insta {color: #AFB1B8;
-          fill: #afb1b8;}
-         .icon-network:hover {fill: var(--white-color);}
-         .network:hover {background-color: var(--accent-color);}
+
+        .icon-network:hover {fill: var(--white-color);}
+        .network:hover {background-color: var(--accent-color);}
         /*Постоянные клиенты*/
         
-         .clients {
-          padding-top: 94px;
-          padding-bottom: 94px;
-        }
         .clients h2 {
           font-weight: bold;
           font-size: 36px;
@@ -274,14 +272,26 @@ margin-bottom: 0;}
           text-align: center;
           letter-spacing: 0.03em;
           color: var(--title-text-color);}
-        .clients-icon {
+
+        .clients ul {display: flex; 
+          margin-top: 50px;}
+        .clients ul .clients-icon + .clients-icon {
+          margin-left: 30px;}
+        .clients-link {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 170px;
           height: 92px;
           fill: #afb1b8;
+          border: 1px solid #AFB1B8;
+          box-sizing: border-box;
+          border-radius: 4px;
+          margin-top: 50px;
           }
+        .clients-link :hover {
+          fill: var(--accent-color);
+          border: var(--accent-color);}
          /*Футер*/
   footer {
     background-color: #2f303a;
@@ -332,9 +342,44 @@ margin-bottom: 0;}
   .inform-list {
     padding: 60px 0 60px 0;
   }
-  
 
-  /*Стили для portfolio.html*/
+         .footer-block {
+           display: flex;
+         }
+          .join h3 {
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 20px;
+  }
+        .join{
+          display: flex;
+          display: block;
+          align-items: center;
+          justify-content: center; 
+          margin-left: 70px;
+        }
+        .join ul{
+          display: flex;
+        }
+        .join-icon {
+          fill: var(--white-color);
+        }
+       .join-link {  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;}
+          .join ul li + li {
+            margin-left: 10px;}
+        .join-link:hover {background-color:var(--accent-color);}
+        
+    /*Стили для portfolio.html*/
   
   /* Page header*/
   
