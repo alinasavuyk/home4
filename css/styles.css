@@ -242,6 +242,27 @@ p {
   margin-left: 30px;
 }
 
+.business-actions {
+  position: relative;
+  
+}
+.business-actions img {
+display: block;}
+.actions {
+position: absolute;
+bottom: 0;
+width: 100%;
+background: rgba(47, 48, 58, 0.8);
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+justify-content: center;
+display: flex;
+align-items: center;
+padding: 27px 0 27px 0;
+color: #FFFFFF;}
 /*Наша команда*/
 
 .section-team {
@@ -545,17 +566,28 @@ address a {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.flex-element:hover {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.flex-element:nth-child(3n) {
-  margin-right: 0;
-}
-.filter-card {
-  padding: 20px 24px;
+          .text-element {
+          position: absolute;
+          font-size: 18px;
+          line-height: 1.56;
+          letter-spacing: 0.03em;
+          background: rgba(33, 150, 243, 0.9);
+          color: var(--white-color);
+          }
+          .flex-text{
+            position: relative;
+          }
+          .flex-element:hover {
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+          }
+          .flex-element:nth-child(3n) {
+            margin-right: 0;
+          }
+          .filter-card {
+            padding: 20px 24px;
 }
 /*Альернатива*/
 /*.flex-element:not(nth-last-child(-n + 3)){
@@ -583,4 +615,42 @@ address a {
 }
 .card-title {
   padding: 30px 0 30px 0;
+}
+/*модальное окно*/
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  
+
+}
+.modal-close{
+  position: absolute;
+  top: 8px;
+  right:8px;
+  width: 30px;
+  height: 30px;
+  border-radius:  50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
