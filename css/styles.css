@@ -5,6 +5,7 @@
   --title-text-color: #212121; /*вторичный цвет заголовка*/
   --accent-color: #2196f3; /*акцент*/
   --white-color: #ffffff; /*белый цвет*/
+  --timing-tunction: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 body {
@@ -53,13 +54,30 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
+  position: relative;
+
+   color: currentColor;
+
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition: color 250ms var(--timing-tunction); 
 }
-
+.current:after {
+  border-radius: 2px;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: #2196F3;
+ 
+  }
+  
 .list {
   padding: 0;
   margin: 0;
@@ -79,8 +97,9 @@ p {
 }
 
 .site-nav .item {
-  /* background-color: tomato;*/
+
   margin-right: 50px;
+  
 }
 
 .site-nav :last-child {
@@ -98,6 +117,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms var(--timing-tunction);
 }
 .nav {
   display: flex;
@@ -139,6 +159,8 @@ p {
   display: flex;
   align-items: center;
 }
+
+
 /*Секция-герой*/
 .hero-section {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -330,12 +352,14 @@ color: #FFFFFF;}
   background-color: var(--white-color);
   align-items: center;
   justify-content: center;
+  
 }
 .links-list li + li {
   margin-left: 10px;
 }
 .network {
   color: currentColor;
+  transition:250ms var(--timing-tunction);
   /*fill: #afb1b8;*/
 }
 .network:hover,
@@ -365,6 +389,7 @@ color: #FFFFFF;}
   box-sizing: border-box;
   border-radius: 4px;
   fill: #afb1b8;
+  transition:250ms var(--timing-tunction);
 }
 .client-item:hover,
 .client-item:focus {
@@ -442,6 +467,7 @@ address a {
   text-transform: uppercase;
 
   color: #ffffff;
+  
 }
 
 .join-block {
@@ -469,6 +495,7 @@ address a {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-tunction);
 }
 .join-item:hover,
 .join-item:focus {
@@ -512,6 +539,7 @@ address a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  transition: 250ms var(--timing-tunction);
 }
 
 /*Портфолио работ*/
@@ -566,17 +594,29 @@ address a {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-          .text-element {
+        .thump{
+          position: relative;
+          overflow: hidden;
+        }
+        .overlay{
           position: absolute;
+          transform: translateY(100%);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          background-color: rgba(33, 150, 243, 0.9);
+          transition: transform 250ms var(--timing-tunction);
+      
+          padding: 63px 24px;
+          margin: 0;
+          color: var(--white-color);
           font-size: 18px;
           line-height: 1.56;
-          letter-spacing: 0.03em;
-          background: rgba(33, 150, 243, 0.9);
-          color: var(--white-color);
-          }
-          .flex-text{
-            position: relative;
-          }
+        }
+        .flex-thump:hover .overlay{transform: translateY(0);}
+       
+        
+
           .flex-element:hover {
             border: 1px solid #eeeeee;
             box-sizing: border-box;
@@ -624,6 +664,8 @@ address a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-tunction); 
 }
 .modal{
   position: absolute;
@@ -633,6 +675,7 @@ address a {
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
+ 
   
 
 }
